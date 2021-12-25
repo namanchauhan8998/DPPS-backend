@@ -29,20 +29,20 @@ app.use(bodyParser.json());
 
 
 //routes for localhost
-//app.use('/users', usersRouter);
-//app.use('/albums', albumsRouter);
-//app.use('/photos', photosRouter);
-//app.use('/marquee',MarqueeRouter);
-//app.use('/Announcement',AnnouncementRouter);
-//app.use('/Assignment',AssignmentRouter);
+app.use('/users', usersRouter);
+app.use('/albums', albumsRouter);
+app.use('/photos', photosRouter);
+app.use('/marquee',MarqueeRouter);
+app.use('/Announcement',AnnouncementRouter);
+app.use('/Assignment',AssignmentRouter);
 // app.use('/AnnouncementFiles',AnnouncementFileRouter);
 //routes for ec2 server
-app.use('/api/users', usersRouter);
-app.use('/api/albums', albumsRouter);
-app.use('/api/photos', photosRouter);
-app.use('/api/marquee',MarqueeRouter);
-app.use('/api/Announcement',AnnouncementRouter);
-app.use('/api/Assignment',AssignmentRouter);
+// app.use('/api/users', usersRouter);
+// app.use('/api/albums', albumsRouter);
+// app.use('/api/photos', photosRouter);
+// app.use('/api/marquee',MarqueeRouter);
+// app.use('/api/Announcement',AnnouncementRouter);
+// app.use('/api/Assignment',AssignmentRouter);
 
 //error
 app.use((req,res,next)=>{
